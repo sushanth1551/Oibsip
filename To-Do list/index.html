@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List Web App</title>
+  <link rel="stylesheet" href="styles.css">
+ 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+  <div class="app-container">
+    <header class="app-header">
+      <h1>To-Do List Web App</h1>
+    </header>
+
+    <main class="app-main">
+      <div class="task-input-section">
+        <input id="task-title" type="text" placeholder="Title" required>
+        <textarea id="task-desc" placeholder="Description" required></textarea>
+        <button id="add-task-btn" class="save-btn">Add Task</button>
+      </div>
+
+      <div class="task-display">
+        <h2>Pending Tasks</h2>
+        <ul id="pending-tasks-list" class="task-list"></ul>
+
+        <h2>Completed Tasks</h2>
+        <ul id="completed-tasks-list" class="task-list"></ul>
+      </div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
